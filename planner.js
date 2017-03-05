@@ -1,4 +1,4 @@
-const MAX_DEPTH = 3;
+const MAX_DEPTH = 2;
 const MAX_WIDTH = 3;
 
 
@@ -15,7 +15,7 @@ function getNearest( n, location, locations)
   locations.sort(function (x, y) {
     return distancef(x, location) - distancef(y, location);
   });
-  return locations.slice(1,ni);
+  return locations.slice(0,ni);
 }
 
 
@@ -184,7 +184,7 @@ var sample =
           "motionless" : false,
           "latitude": 13,
           "longitude" : 14
-        },       
+        },
          "i2" :
         {
           "motionless" : false,
