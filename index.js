@@ -10,7 +10,7 @@ var planner = require('./planner');
 app.use(express.static('public'))
 
 //Client to server
-http.listen(node.env.PORT || 3000, function () {
+http.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port 3000!');
 });
 
